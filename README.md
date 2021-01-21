@@ -2,12 +2,12 @@
 
 train feature extractors, run
 
-python train.py --pert 3
-python train.py --pert 4
-python train.py --pert 5
-python train.py --pert 6
-python train.py --pert 7
-python train.py --pert 8
+python train.py --pert 3\
+python train.py --pert 4\
+python train.py --pert 5\
+python train.py --pert 6\
+python train.py --pert 7\
+python train.py --pert 8\
 
 train linear mergers, run
 
