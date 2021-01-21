@@ -7,8 +7,15 @@ import torchvision.transforms as transforms
 import torch.autograd as ta
 from collections import OrderedDict
 from tqdm import tqdm
-import torch 
-PERT_SIZE=7
+import torch
+
+import argparse
+
+parser = argparse.ArgumentParser(description='adversarial feature stacking')
+parser.add_argument('--pert', type=int)
+args = parser.parse_args()
+
+PERT_SIZE=args.pert
 lr=0.1
 batch_size = 128
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
